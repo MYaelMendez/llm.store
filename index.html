@@ -1,41 +1,74 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
     <meta name="theme-color" content="#0f1724" />
-
-    <title>llm.store � Models & Tools</title>
-    <meta name="description" content="Curated LLM tools and models at llm.store" />
-    <meta property="og:title" content="llm.store � Models & Tools" />
-    <meta property="og:description" content="Curated LLM tools and models at llm.store" />
+    <title>llm.store — Fast LLM Models & Tools</title>
+    <meta name="description" content="Curated, fast LLM models for developers. Production-ready inference at scale." />
+    <meta property="og:title" content="llm.store — Fast LLM Models & Tools" />
+    <meta property="og:description" content="Curated, fast LLM models for developers. Production-ready inference at scale." />
     <meta property="og:type" content="website" />
-
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
     <div class="site">
-      <article class="card" role="main" aria-labelledby="title">
+      <header class="hero">
+        <h1 class="logo">llm.store</h1>
+        <p class="hero-tagline">Fast, curated LLM models for developers</p>
+      </header>
+      <article class="card" role="main">
         <header class="card-header">
-          <h1 id="title">llm.store</h1>
-          <p class="tagline">Curated LLM models, demos, and small tools.</p>
+          <h2 id="title">Production LLMs at Scale</h2>
+          <p class="card-subtitle">Deploy models, not complexity. Inference optimized for speed and cost.</p>
         </header>
-
-        <section class="card-body">
-          <p class="lead">Fast, privacy-minded models for prototypes and production.</p>
-
-          <nav class="actions">
-            <a class="btn primary" href="#">Browse Models</a>
-            <a class="btn ghost" href="#">Documentation</a>
-          </nav>
+        <section class="features">
+          <div class="feature">
+            <div class="feature-icon">⚡</div>
+            <h3>Fast Inference</h3>
+            <p>Sub-100ms latency on standard GPUs</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🔒</div>
+            <h3>Privacy First</h3>
+            <p>Self-hosted, no data leaks</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">💰</div>
+            <h3>Cost Efficient</h3>
+            <p>Run on modest hardware, scale cheaply</p>
+          </div>
         </section>
-
+        <section class="models">
+          <h3 class="section-title">Featured Models</h3>
+          <div class="model-grid">
+            <div class="model-card">
+              <div class="model-name">Llama 3.1 (8B)</div>
+              <div class="model-meta">↓ 26GB • ⚡ 1.2B tok/s</div>
+              <a href="#" class="model-link">Deploy →</a>
+            </div>
+            <div class="model-card">
+              <div class="model-name">Mistral (7B)</div>
+              <div class="model-meta">↓ 14GB • ⚡ 2B tok/s</div>
+              <a href="#" class="model-link">Deploy →</a>
+            </div>
+            <div class="model-card">
+              <div class="model-name">Qwen 2 (7B)</div>
+              <div class="model-meta">↓ 15GB • ⚡ 1.8B tok/s</div>
+              <a href="#" class="model-link">Deploy →</a>
+            </div>
+          </div>
+        </section>
+        <nav class="actions">
+          <a class="btn primary" href="https://github.com/MYaelMendez/llm.store" target="_blank">View Repository</a>
+          <a class="btn ghost" href="#models">Browse Models</a>
+        </nav>
         <footer class="card-footer">
-          <small>Deployed via GitHub Pages � <span class="muted">llm.store</span></small>
+          <p class="footer-text">Deployed via GitHub Pages • <a href="https://github.com/MYaelMendez/llm.store" class="footer-link">MYaelMendez/llm.store</a></p>
+          <p class="footer-meta">Last updated: 2026-06-10</p>
         </footer>
       </article>
     </div>
-
     <script src="/assets/js/main.js"></script>
   </body>
 </html>
