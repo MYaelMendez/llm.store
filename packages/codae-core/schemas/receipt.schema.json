@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llm.store/spec/codae/receipt-0.1.schema.json",
+  "title": "codæ Witness Receipt v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocol",
+    "receiptId",
+    "planId",
+    "principal",
+    "status",
+    "executedAt",
+    "effects",
+    "witness"
+  ],
+  "properties": {
+    "protocol": {
+      "const": "codae-witness/0.1"
+    },
+    "receiptId": {
+      "type": "string"
+    },
+    "planId": {
+      "type": "string"
+    },
+    "principal": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "completed",
+        "failed",
+        "denied",
+        "partial"
+      ]
+    },
+    "executedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "effects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "capability",
+          "outcome"
+        ],
+        "properties": {
+          "capability": {
+            "type": "string"
+          },
+          "outcome": {
+            "type": "string"
+          },
+          "externalSideEffect": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "witness": {
+      "type": "object",
+      "required": [
+        "method"
+      ],
+      "properties": {
+        "method": {
+          "enum": [
+            "local-demo",
+            "runtime-log",
+            "signed-attestation"
+          ]
+        },
+        "signature": {
+          "type": "string"
+        },
+        "issuer": {
+          "type": "string"
+        }
+      }
+    },
+    "grantId": {
+      "type": "string"
+    }
+  }
+}
