@@ -1,0 +1,23 @@
+{
+  "protocol": "codae/0.1",
+  "planId": "example-meeting-001",
+  "principal": "human/example",
+  "intent": "Prepare a human-reviewable meeting agenda",
+  "capabilities": [
+    "meeting.agenda"
+  ],
+  "steps": [
+    {
+      "id": "agenda",
+      "capability": "meeting.agenda",
+      "input": {
+        "topic": "Partner-site planning"
+      }
+    }
+  ],
+  "status": "proposal",
+  "requiredScopes": [
+    "local:write"
+  ],
+  "adapter": "mock/reference"
+}
