@@ -1,0 +1,27 @@
+{
+  "interface": {
+    "capabilities": [
+      "skills"
+    ],
+    "category": "Other",
+    "composerIcon": "./assets/gpt-icon.png",
+    "defaultPrompt": [
+      "TOP \ud83c\udfce\ufe0f ",
+      "F1",
+      "NASCAR"
+    ],
+    "developerName": "Yael Mendez",
+    "displayName": "\ud83c\udfce\ufe0f",
+    "logo": "./assets/gpt-icon.png",
+    "longDescription": "\ud83c\udfce\ufe0f",
+    "shortDescription": "\ud83c\udfce\ufe0f"
+  },
+  "name": "gpt-fa1edc5f037b7dac9db64ddb9933708e",
+  "version": "0.3.2",
+  "description": "\ud83c\udfce\ufe0f",
+  "author": {
+    "name": "Yael Mendez"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

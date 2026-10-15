@@ -1,0 +1,9 @@
+{
+  "interface": {
+    "shortDescription": "Capture tasks and handoffs",
+    "longDescription": "Turn user-selected context into a reviewable task card with sources, proposed steps, constraints and a completion check. Prepare portable handoffs when requested. Does not read the system clipboard in the background or save, deliver or execute a task without an available authorized tool."
+  },
+  "publication": {
+    "release_notes": "Define a focused emoji workflow with source-aware handoffs, explicit freshness and human authority boundaries."
+  }
+}

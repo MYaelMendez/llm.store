@@ -1,0 +1,23 @@
+{
+  "interface": {
+    "capabilities": [
+      "skills"
+    ],
+    "category": "Other",
+    "composerIcon": "./assets/gpt-icon.png",
+    "defaultPrompt": [],
+    "developerName": "Yael Mendez",
+    "displayName": "\ud83d\udccb",
+    "logo": "./assets/gpt-icon.png",
+    "longDescription": "\ud83d\udccb",
+    "shortDescription": "\ud83d\udccb"
+  },
+  "name": "gpt-35b85eaf2a67d3de797ee1ae5807a24f",
+  "version": "0.2.2",
+  "description": "\ud83d\udccb",
+  "author": {
+    "name": "Yael Mendez"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

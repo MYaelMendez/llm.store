@@ -1,0 +1,4 @@
+interface:
+  default_prompt: How did TV evolve over time?
+  display_name: 📺
+  short_description: /📺

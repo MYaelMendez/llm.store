@@ -1,0 +1,9 @@
+{
+  "interface": {
+    "shortDescription": "Search with cited evidence",
+    "longDescription": "Search public sources or authorized connected services, refine queries and return concise findings with citations, relevant dates and coverage limits. Tool availability depends on the host. Prepare evidence handoffs when requested; no automatic routing, private-account access or background monitoring is included."
+  },
+  "publication": {
+    "release_notes": "Define a focused emoji workflow with source-aware handoffs, explicit freshness and human authority boundaries."
+  }
+}

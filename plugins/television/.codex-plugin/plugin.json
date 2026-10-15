@@ -1,0 +1,27 @@
+{
+  "interface": {
+    "capabilities": [
+      "skills"
+    ],
+    "category": "Other",
+    "composerIcon": "./assets/gpt-icon.png",
+    "defaultPrompt": [
+      "How did TV evolve over time?",
+      "Describe a classic TV moment.",
+      "Generate an image of a vintage TV."
+    ],
+    "developerName": "Yael Mendez",
+    "displayName": "\ud83d\udcfa",
+    "logo": "./assets/gpt-icon.png",
+    "longDescription": "/\ud83d\udcfa",
+    "shortDescription": "/\ud83d\udcfa"
+  },
+  "name": "gpt-3313e3ce4b4bc16d904e667d96eaa269",
+  "version": "0.3.2",
+  "description": "/\ud83d\udcfa",
+  "author": {
+    "name": "Yael Mendez"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}
