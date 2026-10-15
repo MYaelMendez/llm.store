@@ -1,0 +1,42 @@
+{
+  "format": "ae-plugin-catalog-v1",
+  "repository": "https://github.com/MYaelMendez/llm.store",
+  "plugins": [
+    {
+      "id": "search",
+      "source": "plugins/search",
+      "listing": "publication/search.json",
+      "plugin_id": "plugin_bb0279ea68c48191ac02515d6cbd0bf6",
+      "imported_release_id": "pluginrel_6ad134cff7ac8191a0dcc052c18dc68d",
+      "imported_version": "0.2.2",
+      "type": "skills-only"
+    },
+    {
+      "id": "capture",
+      "source": "plugins/capture",
+      "listing": "publication/capture.json",
+      "plugin_id": "plugin_3540d0b32d108191a90dd847e24e7c3c",
+      "imported_release_id": "pluginrel_6ad134d852f88191b4de17a4b8f00d80",
+      "imported_version": "0.2.2",
+      "type": "skills-only"
+    },
+    {
+      "id": "motorsports",
+      "source": "plugins/motorsports",
+      "listing": "publication/motorsports.json",
+      "plugin_id": "plugin_6ccc527cfa188191ab5ab76b1a8509e4",
+      "imported_release_id": "pluginrel_6ad134e377808191a32950b9c3b6a8e0",
+      "imported_version": "0.3.2",
+      "type": "skills-only"
+    },
+    {
+      "id": "television",
+      "source": "plugins/television",
+      "listing": "publication/television.json",
+      "plugin_id": "plugin_9173ad1e87408191b2b2f122f94001c1",
+      "imported_release_id": "pluginrel_6ad134ee51088191a6b4687f3bdfb14b",
+      "imported_version": "0.3.2",
+      "type": "skills-only"
+    }
+  ]
+}

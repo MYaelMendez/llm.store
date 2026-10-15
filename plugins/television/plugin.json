@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Yael Mendez"
+  },
+  "description": "/📺",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Other",
+        "composerIcon": "./assets/gpt-icon.png",
+        "defaultPrompt": [
+          "How did TV evolve over time?",
+          "Describe a classic TV moment.",
+          "Generate an image of a vintage TV."
+        ],
+        "developerName": "Yael Mendez",
+        "displayName": "📺",
+        "logo": "./assets/gpt-icon.png",
+        "longDescription": "/📺",
+        "shortDescription": "/📺"
+      }
+    }
+  },
+  "name": "gpt-3313e3ce4b4bc16d904e667d96eaa269",
+  "version": "0.3.2"
+}

@@ -1,0 +1,9 @@
+{
+  "interface": {
+    "shortDescription": "Motorsports and motor tech",
+    "longDescription": "Explain motorsports and vehicle technology, and prepare sourced race briefings, ticker drafts and nano teleprompts. Verify changing schedules and results using available host tools. Distinguish scheduled, live and final status, measured telemetry and hypothetical examples. No dedicated live feed, vehicle control or automatic alerts are included."
+  },
+  "publication": {
+    "release_notes": "Define a focused emoji workflow with source-aware handoffs, explicit freshness and human authority boundaries."
+  }
+}

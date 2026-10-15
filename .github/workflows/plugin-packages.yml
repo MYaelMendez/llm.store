@@ -1,0 +1,48 @@
+name: Build emoji plugin drafts
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'plugins/**'
+      - 'publication/**'
+      - 'scripts/build_plugins.py'
+      - 'scripts/test_plugin_factory.py'
+      - '.github/workflows/plugin-packages.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, verified immutable revision
+        with:
+          persist-credentials: false
+      - name: Test packaging and boundaries
+        run: python3 scripts/test_plugin_factory.py
+      - name: Build complete draft ZIPs
+        run: python3 scripts/build_plugins.py
+      - name: Retain ZIPs and readiness receipts
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4, verified immutable revision
+        with:
+          name: emoji-plugin-drafts-${{ github.sha }}
+          path: plugin-dist/
+          if-no-files-found: error
+          retention-days: 14
+      - name: Explain artifact state
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          rows = json.loads(Path('plugin-dist/index.json').read_text())
+          text = '## Emoji plugin ZIPs prepared\n\nNo plugin was submitted or published.\n\n'
+          text += '| Plugin | Package | Publication |\n|---|---|---|\n'
+          for row in rows:
+              text += '| ' + row['id'] + ' | ' + row['package_checks'] + ' | ' + row['publication_status'] + ' |\n'
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as out:
+              out.write(text)
+          PY

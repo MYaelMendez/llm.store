@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Yael Mendez"
+  },
+  "description": "🏎️",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Other",
+        "composerIcon": "./assets/gpt-icon.png",
+        "defaultPrompt": [
+          "TOP 🏎️ ",
+          "F1",
+          "NASCAR"
+        ],
+        "developerName": "Yael Mendez",
+        "displayName": "🏎️",
+        "logo": "./assets/gpt-icon.png",
+        "longDescription": "🏎️",
+        "shortDescription": "🏎️"
+      }
+    }
+  },
+  "name": "gpt-fa1edc5f037b7dac9db64ddb9933708e",
+  "version": "0.3.2"
+}

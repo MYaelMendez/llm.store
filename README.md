@@ -23,3 +23,9 @@ git push -u origin main
 ```
 
 After pushing, enable GitHub Pages for the `main` branch (root) if not automatic.
+
+## Emoji plugin packages
+
+🔍 Search · 📋 Capture · 🏎️ Motorsports · 📺 Television and briefings.
+
+The [plugin release factory](docs/plugin-factory.md) builds reproducible public-upload draft ZIPs from versioned sources. Run `python3 scripts/build_plugins.py` or use **Build emoji plugin drafts** in Actions. Read each readiness receipt before submission; packages are not yet publicly listed.

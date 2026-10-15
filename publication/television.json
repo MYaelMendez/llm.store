@@ -1,0 +1,9 @@
+{
+  "interface": {
+    "shortDescription": "Television and briefings",
+    "longDescription": "Explore television history, broadcasting and digital or AI media. Turn supplied or retrieved evidence into sourced briefings, ticker drafts and short nano teleprompts. Tools depend on the host. This plugin does not provide automatic broadcasting, live feeds or media publication."
+  },
+  "publication": {
+    "release_notes": "Define a focused emoji workflow with source-aware handoffs, explicit freshness and human authority boundaries."
+  }
+}
