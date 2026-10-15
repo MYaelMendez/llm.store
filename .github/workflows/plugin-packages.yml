@@ -39,10 +39,10 @@ jobs:
           import json, os
           from pathlib import Path
           rows = json.loads(Path('plugin-dist/index.json').read_text())
-          text = '## Emoji plugin ZIPs prepared\\n\\nNo plugin was submitted or published.\\n\\n'
-          text += '| Plugin | Package | Publication |\\n|---|---|---|\\n'
+          text = '## Emoji plugin ZIPs prepared\n\nNo plugin was submitted or published.\n\n'
+          text += '| Plugin | Package | Publication |\n|---|---|---|\n'
           for row in rows:
-              text += '| ' + row['id'] + ' | ' + row['package_checks'] + ' | ' + row['publication_status'] + ' |\\n'
+              text += '| ' + row['id'] + ' | ' + row['package_checks'] + ' | ' + row['publication_status'] + ' |\n'
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as out:
               out.write(text)
           PY
