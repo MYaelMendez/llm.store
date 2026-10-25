@@ -23,3 +23,7 @@ git push -u origin main
 ```
 
 After pushing, enable GitHub Pages for the `main` branch (root) if not automatic.
+
+## æ.store foundation
+
+See [ae-store/README.md](ae-store/README.md) and its [proposed charter](ae-store/CHARTER.md) for the registry and provisioning architecture for human-governed virtual computers. This is an isolated, specification-first foundation: no image, provisioner, VM isolation or deployed DAO is supplied. Existing site and codæ contracts are preserved.
