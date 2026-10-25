@@ -1,0 +1,13 @@
+{
+  "schema": "ae.store.governance.proposal.v0.1",
+  "status": "PROPOSED",
+  "kind": "dao-template",
+  "authorityRoot": "human://root",
+  "adoption": "REQUIRES_EXPLICIT_HUMAN_DECISION",
+  "members": [],
+  "decisionRule": null,
+  "delegatedScopes": [],
+  "recoveryPolicy": null,
+  "legalEntityStatus": "NOT_ESTABLISHED_BY_THIS_TEMPLATE",
+  "runtimeEnforcement": "NOT_IMPLEMENTED"
+}

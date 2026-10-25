@@ -1,0 +1,25 @@
+{
+  "schema": "ae.store.computer.proposal.v0.1",
+  "id": "ae.computer.default",
+  "version": "0.1.0",
+  "status": "PROPOSED",
+  "artifactType": "virtual-computer-template",
+  "purpose": "Human-governed agentic workspace",
+  "image": null,
+  "governance": {
+    "template": "governance/dao.template.json",
+    "status": "PROPOSED"
+  },
+  "authority": {
+    "root": "human://root",
+    "inherit": false,
+    "grants": [],
+    "provisionerRetainsRuntimeAuthority": false
+  },
+  "provisioning": {
+    "status": "NOT_IMPLEMENTED",
+    "adapter": null
+  },
+  "agents": [],
+  "modules": []
+}

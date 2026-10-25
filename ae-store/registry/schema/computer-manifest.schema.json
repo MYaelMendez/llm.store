@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "æ.store unbound computer proposal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "id",
+    "version",
+    "status",
+    "artifactType",
+    "purpose",
+    "image",
+    "governance",
+    "authority",
+    "provisioning",
+    "agents",
+    "modules"
+  ],
+  "properties": {
+    "schema": {
+      "const": "ae.store.computer.proposal.v0.1"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9.-]{2,79}$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "status": {
+      "const": "PROPOSED"
+    },
+    "artifactType": {
+      "const": "virtual-computer-template"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "image": {
+      "type": "null"
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "template",
+        "status"
+      ],
+      "properties": {
+        "template": {
+          "const": "governance/dao.template.json"
+        },
+        "status": {
+          "const": "PROPOSED"
+        }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "root",
+        "inherit",
+        "grants",
+        "provisionerRetainsRuntimeAuthority"
+      ],
+      "properties": {
+        "root": {
+          "const": "human://root"
+        },
+        "inherit": {
+          "const": false
+        },
+        "grants": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "provisionerRetainsRuntimeAuthority": {
+          "const": false
+        }
+      }
+    },
+    "provisioning": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "adapter"
+      ],
+      "properties": {
+        "status": {
+          "const": "NOT_IMPLEMENTED"
+        },
+        "adapter": {
+          "type": "null"
+        }
+      }
+    },
+    "agents": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "modules": {
+      "type": "array",
+      "maxItems": 0
+    }
+  }
+}
