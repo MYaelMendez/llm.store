@@ -15,7 +15,7 @@ The product is a human-governed virtual computer. Studio is the interface to it.
 
 ## Registry boundary
 
-A future registry must validate schemas and artifact digests, track publisher provenance and immutable versions, identify revocations, and separate draft/reviewed/released states. The JSON Schema included here describes the deliberately unbound proposal format only. It is not an executable policy engine, package installer or complete release schema.
+A future registry must validate schemas and artifact digests, track publisher provenance and immutable versions, identify revocations, and separate draft/reviewed/released states. The manifest and governance schemas describe the deliberately unbound proposal format only. The offline validator enforces that bounded vocabulary and policy hash consistency. It is not a runtime policy engine, package installer or complete release validator.
 
 ## Computer image boundary
 
@@ -33,3 +33,4 @@ llm.store keeps its current site and [codæ plan/receipt specifications](../../p
 - Isolation, network/resource restrictions, credential teardown and export are exercised with real execution records.
 - No operator runtime grant remains after handover; provider administration and recovery limits are disclosed.
 - Runtime and DAO capabilities are described only to the extent their enforcement was tested. A DAO template is not a legal entity.
+

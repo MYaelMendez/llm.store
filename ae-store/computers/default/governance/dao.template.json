@@ -9,5 +9,8 @@
   "delegatedScopes": [],
   "recoveryPolicy": null,
   "legalEntityStatus": "NOT_ESTABLISHED_BY_THIS_TEMPLATE",
-  "runtimeEnforcement": "NOT_IMPLEMENTED"
+  "runtimeEnforcement": "NOT_IMPLEMENTED",
+  "version": "0.1.0",
+  "grantExpiry": null,
+  "revocationPolicy": null
 }

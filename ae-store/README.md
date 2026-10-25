@@ -16,7 +16,7 @@ This directory incubates the æ.store foundation within the existing **llm.store
 | --- | --- |
 | Charter, architecture and human-root contract | Written specification |
 | Default computer manifest | Proposed configuration; no image attached |
-| Registry manifest schema | JSON Schema document; no registry validator/service installed |
+| Manifest and governance validation | Offline, read-only validator and adversarial tests implemented; registry service absent |
 | DAO governance template | Proposed policy document; no deployed DAO or legal entity |
 | Provisioning, VM isolation, credentials and runtime enforcement | Not implemented here |
 | Signed registry entries, revocation service and execution receipts | Not implemented here |
@@ -54,3 +54,19 @@ No infrastructure is provisioned by cloning, registering or reading this reposit
 The repository's [LICENSE](../LICENSE) applies to this foundation; third-party images and modules retain their own licenses. A proposed artifact without a resolvable source, license and digest must not be released as a runnable computer.
 
 **Context may propagate; authority does not.**
+
+
+## Validate the foundation
+
+Requires Python 3.9+ with its standard library; no package installation or network access is needed by the validator. From the repository root:
+
+```sh
+python3 -I -B ae-store/tools/validate.py
+python3 -I -B -m unittest discover -s ae-store/tests -v
+```
+
+Successful output is `VALID_UNBOUND_PROPOSAL`, with `runtimeVerified: false` and `provisioningAuthorized: false`. It is never permission to run a computer. The validator rejects missing/unknown fields, duplicate JSON keys, control-character metadata, oversized documents, symlinks, unsupported schema keywords, stale policy digests and executable/authority claims. It supports only the schema vocabulary used here; it is not a general JSON Schema implementation. Remote schema references are rejected and never fetched.
+
+Both policies are bound by the exact file bytes. A deliberate policy update needs review and explicit digest rebinding in the manifest. The validator does not repair, refresh, install or provision anything. See [the threat model](docs/security.md).
+
+The PR workflow uses read-only repository permissions and a pinned checkout action. A green job verifies the checked proposal revision; branch protection, publisher signatures and runtime security remain separate requirements.

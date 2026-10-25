@@ -7,7 +7,8 @@
   "purpose": "Human-governed agentic workspace",
   "image": null,
   "governance": {
-    "template": "governance/dao.template.json",
+    "path": "computers/default/governance/dao.template.json",
+    "sha256": "e672064a5c70232df6eeb684fe04a45d739a38057e58d89f476096214bf5c32e",
     "status": "PROPOSED"
   },
   "authority": {
@@ -21,5 +22,24 @@
     "adapter": null
   },
   "agents": [],
-  "modules": []
+  "modules": [],
+  "charter": {
+    "path": "CHARTER.md",
+    "sha256": "f6606a5426b0d2a09e88028e40377901bab7267ca1dbea371e469e8d9a7928fe"
+  },
+  "verification": {
+    "status": "NOT_EXECUTED",
+    "evidence": []
+  },
+  "publication": {
+    "status": "DRAFT",
+    "publisherIdentity": null,
+    "artifactDigest": null
+  },
+  "resourceLimits": {
+    "cpuMillis": 0,
+    "memoryBytes": 0,
+    "storageBytes": 0,
+    "networkRequests": 0
+  }
 }

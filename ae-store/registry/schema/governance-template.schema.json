@@ -1,0 +1,77 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "status",
+    "kind",
+    "authorityRoot",
+    "adoption",
+    "members",
+    "decisionRule",
+    "delegatedScopes",
+    "recoveryPolicy",
+    "legalEntityStatus",
+    "runtimeEnforcement",
+    "version",
+    "grantExpiry",
+    "revocationPolicy"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "ae.store.governance.proposal.v0.1"
+    },
+    "status": {
+      "type": "string",
+      "const": "PROPOSED"
+    },
+    "kind": {
+      "type": "string",
+      "const": "dao-template"
+    },
+    "authorityRoot": {
+      "type": "string",
+      "const": "human://root"
+    },
+    "adoption": {
+      "type": "string",
+      "const": "REQUIRES_EXPLICIT_HUMAN_DECISION"
+    },
+    "members": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "decisionRule": {
+      "type": "null"
+    },
+    "delegatedScopes": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "recoveryPolicy": {
+      "type": "null"
+    },
+    "legalEntityStatus": {
+      "type": "string",
+      "const": "NOT_ESTABLISHED_BY_THIS_TEMPLATE"
+    },
+    "runtimeEnforcement": {
+      "type": "string",
+      "const": "NOT_IMPLEMENTED"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "maxLength": 30
+    },
+    "grantExpiry": {
+      "type": "null"
+    },
+    "revocationPolicy": {
+      "type": "null"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Inactive DAO governance template"
+}

@@ -47,3 +47,10 @@ Publish reusable source and preserve its license and provenance. Third-party cap
 Version this charter and review changes in public source. Computers remain bound to the exact policy they adopted until their authorized human governance approves migration. No registry update silently rewrites authority or upgrades a running computer.
 
 **Many agents. One human principal. Context may propagate; authority does not.**
+
+
+## 11. Proposal validation and trust boundary
+
+The included offline validator accepts only unbound proposals. It does not authorize provisioning, authenticate human://root, form a DAO or certify software safety. Manifest bindings use SHA-256 over the exact charter and governance bytes. A changed policy requires explicit review and rebinding; validation never refreshes digests automatically. Hashes detect inconsistent files, not publisher identity or approval. An adversary who can change both files and digests can create a consistent proposal; authenticated review and signed releases remain future work.
+
+DAO activation requires an explicit human constituency, adopted decision rule, bounded delegation, expiry, revocation and recovery procedure. The default template intentionally supplies none of these and must remain inactive. It cannot infer legitimacy from a token, vote or registry label.
